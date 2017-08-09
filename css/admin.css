@@ -1,0 +1,23 @@
+body {
+  margin-bottom: 5rem;
+}
+
+#button-new-task {
+  position: fixed;
+  bottom:2rem;
+  right: 2rem;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+
+#pending-task-window-deny {
+  margin-top: 1rem;
+}
+
+#pending-volunteer-wrapper {
+  background-color: #eee;
+  padding: 1rem;
+}

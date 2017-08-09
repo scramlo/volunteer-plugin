@@ -1,0 +1,193 @@
+body {
+  font-family: sans-serif;
+  margin: 0.5rem;
+}
+
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width:100vw;
+}
+
+#login-box {
+  display: flex;
+  align-items: center;
+}
+
+#login-password-box {
+  display:none;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.login-option {
+  background-color: rgb(100,100,100);
+  padding: 2rem;
+  margin: 1rem;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-list li:focus, .app-list li:hover, .app-list li:active {
+  background-color: rgb(228,228,228);
+}
+
+.login-option:focus, .login-option:hover, .login-option:active,
+.alert-exit:focus, .alert-exit:hover, .alert-exit:active {
+  background-color: rgb(175,175,175);
+}
+
+#login-option-volunteer {
+  text-decoration: none;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgb(100,100,100);
+}
+
+textarea {
+  width: 90%;
+}
+
+input:last-of-type {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: rgb(100,100,100);
+  border:none;
+  width: 90%;
+  color: white;
+}
+
+input, button {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+#alert-wrap {
+  border: 0.2rem solid rgb(100,100,100);
+  display:flex;
+  justify-content: space-between;
+}
+
+#alert-body {
+  padding: 0.5rem;
+  background: white;
+}
+
+#alert-exit {
+  background-color: rgb(100,100,100);
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.app-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.app-list li {
+  padding: 1rem;
+  border-top: 1px solid rgb(228,228,228);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-list li:last-of-type {
+  border-bottom: 1px solid rgb(228,228,228);
+}
+
+.app-list-item-symbol-wrapper {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-list-item-symbol, .muted {
+  color: rgb(177,177,177);
+}
+
+#task-window, #new-task-window, #pending-task-window {
+  height:100%;
+  position:absolute;
+  background-color: white;
+  padding:1rem;
+  transform: translate3d(100vw,0px,0px);
+  opacity:0;
+  min-width: 15rem;
+}
+
+#main-volunteer-window {
+  opacity: 1;
+  transform: translate3d(0px,0px,0px);
+}
+
+@keyframes slideOut {
+  from {opacity:1; transform: translate3d(0px,0px,0px);}
+  to {opacity: 0; transform:translate3d(-100vw,0px,0px);}
+}
+
+@keyframes slideIn {
+  from {opacity:0; transform: translate3d(100vw,0px,0px);}
+  to {opacity:1; transform:translate3d(0px,0px,0px);}
+}
+
+@keyframes slideBackOut {
+  from {opacity:1; transform: translate3d(0px,0px,0px);}
+  to {opacity: 0; transform:translate3d(100vw,0px,0px);}
+}
+
+@keyframes slideBackIn {
+  from {opacity:0; transform: translate3d(-100vw,0px,0px);}
+  to {opacity:1; transform:translate3d(0px,0px,0px);}
+}
+
+@keyframes fadeOut {
+  from {opacity:1;}
+  to {opacity:0;}
+}
+
+.align-center {
+  text-align: center;
+}
+
+#task-window-close, #new-task-window-close, #pending-task-window-close {
+  background-color: white;
+  color: rgb(100,100,100);
+  border: 1px solid rgb(100,100,100);
+  margin-top: 1rem;
+}
+
+label, small {
+  font-size: 0.75rem;
+  color: #868686;
+  width: 90%;
+}
+
+#task-window input, #new-task-window input {
+  width: 90%;
+}
+#task-window input:first-of-type, #new-ask-window input:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.button-full {
+  width: 100%;
+}
